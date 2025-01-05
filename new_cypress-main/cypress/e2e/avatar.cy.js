@@ -3,8 +3,8 @@ describe('Покупка аватара', function () {
     it('e2e тест на покупку нового аватара для тренера', function () {
          cy.visit('https://pokemonbattle.ru/login'); // Зашли на сайт
 
-         cy.get(':nth-child(1) > .auth__input').type('iulia.shesterickova@yandex.ru'); // Ввели логин
-         cy.get('#password').type('Zxcvbnm1'); // Ввели пароль
+         cy.get(':nth-child(1) > .auth__input').type('USER_LOGIN'); // Ввели логин
+         cy.get('#password').type('USER_PASSWORD'); // Ввели пароль
          cy.get('.auth__button').click(); // Нажала кнопку "Войти"
          cy.wait(2000);
 
